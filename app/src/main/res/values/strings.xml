@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">IMC calculadora Peso Ideal</string>
+    <string name="title_inicio">Inicio</string>
+    <string name="title_diario">Diario</string>
+    <string name="title_apps">Apps</string>
+
+    <!-- Datos personales -->
+    <string name="titulo_dp">Datos personales</string>
+    <string name="nacimiento_dp">Fecha nacimiento</string>
+    <string name="peso_dp">Peso</string>
+    <string name="altura_dp">Altura</string>
+    <string name="grabar_dp">Grabar</string>
+
+    <!-- Inicio -->
+    <string name="misDatos">Mis datos</string>
+
+    <!-- Diario -->
+    <string name="tituloDiario">Histórico de pesos</string>
+
+    <!-- Otras Apps -->
+    <string name="titulo_otras_apps">Otras Apps del Autor</string>
+    <string name="privacidad">Todos los datos se guardan en el dispositivo de forma local. Ninguno se sube a la nube ni comparten con terceros.</string>
+    <string name="nombre_dp">Introduce tu nombre</string>
+    <string name="sexo_dp">Sexo</string>
+    <string name="masculino_dp">Masculino</string>
+    <string name="femenino_dp">Femenino</string>
+</resources>
