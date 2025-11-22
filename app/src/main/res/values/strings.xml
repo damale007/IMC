@@ -13,6 +13,14 @@
 
     <!-- Inicio -->
     <string name="misDatos">Mis datos</string>
+    <string name="TMB">TMB</string>
+    <string name="calorias">Cal</string>
+    <string name="TMB_titulo">TMB o Tasa Metabólica Basal</string>
+    <string name="TMB_texto">Este es el número de calorías que tu cuerpo necesita para funcionar en reposo (respirar, digerir, mantener la temperatura, etc.)</string>
+    <string name="GEDT">GEDT</string>
+    <string name="GEDT_error">Defina actividad</string>
+    <string name="GEDT_titulo">GEDT o Gasto Energético Diario Total</string>
+    <string name="GEDT_texto">Estimación de la cantidad total de calorías que quema al día. Esto es extremadamente útil para personas que quieren mantener, perder o ganar peso.</string>
 
     <!-- Diario -->
     <string name="tituloDiario">Histórico de pesos</string>
@@ -20,8 +28,127 @@
     <!-- Otras Apps -->
     <string name="titulo_otras_apps">Otras Apps del Autor</string>
     <string name="privacidad">Todos los datos se guardan en el dispositivo de forma local. Ninguno se sube a la nube ni comparten con terceros.</string>
-    <string name="nombre_dp">Introduce tu nombre</string>
+    <string name="nombre_dp">Nombre</string>
     <string name="sexo_dp">Sexo</string>
+    <string name="years">años</string>
     <string name="masculino_dp">Masculino</string>
     <string name="femenino_dp">Femenino</string>
+    <string name="ok">Aceptar</string>
+    <string name="alto">de altura</string>
+    <string name="noAlto">Sin altura</string>
+    <string name="pesoIdeal">Ideal</string>
+    <string name="pesoIdealT">Ideal.</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="bajopeso">Bajo peso</string>
+    <string name="atencion">Atención</string>
+    <string name="errorPeso">Debe rellenar un peso correcto</string>
+    <string name="errorNombre">Debe rellenar un nombre</string>
+    <string name="errorAltura">Debe rellenar una altura correcta</string>
+    <string name="errorDatos">Debe rellenar todos los campos con valores correctos</string>
+
+    <string name="imcT">IMC (Índice de Masa Corporal)</string>
+    <string name="imcInf">IMC bajo</string>
+    <string name="imcNormal">IMC normal</string>
+    <string name="imcAlto">IMC alto</string>
+    <string name="imcObesidad">Obesidad</string>
+    <string name="imcError">IMC erróneo</string>
+
+    <string name="pesoActual">Peso actual</string>
+    <string name="historial_de_pesos">Historial de pesos</string>
+    <string name="editar">Editar</string>
+    <string name="version">Versión 2.0.3</string>
+
+    <string name="tiempoPesoIdeal1">Según sus entradas, tardará </string>
+    <string name="tiempoPesoIdeal2">meses en llegar a su peso ideal.</string>
+    <string name="botonMenu">Guía de menú</string>
+    <string name="descripcionMenu">Este menú es una aproximación a las calorías que gasta normalmente. No debe tomarlo al pie de la letra, es una aproximación, para crear un menú definitivo visite un nutricionista.</string>
+    <string name="desayuno">Desayuno</string>
+    <string name="almuerzo">Almuerzo</string>
+    <string name="cena">Cenar</string>
+    <string name="snack">Snack</string>
+    <string name="menu">Menú:</string>
+    <string name="mediaconsumo"> cal. Usted consume una media de </string>
+    <string name="caloriasDia"> cal al día. </string>
+
+    <string-array name="meriendas">
+        <item>Salmón al horno con verduras asadas, o Sopa de lentejas.</item>
+        <item>Snack 1 (media mañana): 1 yogur natural sin azúcar con 1 cucharada de semillas de chía.\n
+            Snack 2 (media tarde): 1 puñado pequeño de frutos secos (nueces o almendras) y 1 manzana.</item>
+        <item>Snack 1 (media mañana): Batido de proteínas hecho con 1.5 tazas de leche, 1 plátano y 1 scoop de proteína en polvo.\n
+            Snack 2 (media tarde): 1 taza de yogur griego entero con frutos rojos y 2 cucharadas de semillas de chía o lino.\n
+            Snack 3 (opcional o post-entreno): 1 barrita de proteína y 1 pieza de fruta.</item>
+        <item>Snack 1 (media mañana): 1 yogur griego entero con un puñado de frutos secos (nueces o almendras). (aprox. 280 cal)\n
+            Snack 2 (media tarde): 1 manzana y 1 puñado de frutos secos o una barrita de proteína. (aprox. 300 cal)</item>
+    </string-array>
+
+    <string-array name="desayunos">
+        <item>Avena con fruta y nueces, o Tostadas integrales con aguacate y huevo.</item>
+        <item>Opción 1: Tazón de avena con 1/2 taza de avena seca, 1 taza de leche o bebida vegetal, y 1/2 taza de frutos rojos.\n
+            Opción 2: 2 huevos revueltos con una rebanada de pan integral y 1 pieza de fruta.</item>
+        <item>Opción 1: Batido con 1 taza de leche entera, 1 plátano, 1/2 taza de avena y 1 cucharada de mantequilla de cacahuete.\n
+            Opción 2: 3 huevos revueltos con 2 rebanadas de pan integral, 1/2 aguacate y 1 zumo de naranja natural.</item>
+        <item>Opción 1: Tazón grande de avena (1 taza de avena seca) cocida con 1.5 tazas de leche, 1 cucharada de miel, 1 plátano en rodajas y 1 puñado generoso de frutos secos (almendras o nueces).\n
+            Opción 2: 4 huevos revueltos, 2 salchichas de pollo/pavo, 2 rebanadas de pan integral tostado con aguacate y un vaso de zumo de naranja natural.</item>
+    </string-array>
+
+    <string-array name="almuerzos">
+        <item>Ensalada grande con pollo a la parrilla o pescado, o Wrap de pollo con verduras.</item>
+        <item>Opción 1: Ensalada grande con 150g de pechuga de pollo a la plancha, mezcla de hojas verdes, tomate, pepino, zanahoria rallada, 1/2 aguacate pequeño y un aliño ligero (vinagreta de limón y aceite de oliva).\n
+            Opción 2: Un wrap de trigo integral con 100g de atún en agua, lechuga, tomate y un poco de mayonesa ligera. Acompaña con 1 taza de fruta picada.</item>
+        <item>Opción 1: 200g de pechuga de pollo a la parrilla, 1 taza de arroz integral, 1 taza de verduras asadas (brócoli, pimientos) y 1 cucharada de aceite de oliva.\n
+            Opción 2: Salmón a la plancha (150g), 1 patata grande al horno y una ensalada grande con lechuga, tomate, pepino y vinagreta.</item>
+        <item>Opción 1: Gran porción de pechuga de pollo a la plancha (250g) con 2 tazas de arroz integral y una mezcla de verduras asadas (brócoli, zanahorias, pimientos) con 2 cucharadas de aceite de oliva.\n
+            Opción 2: Fajitas de carne de ternera (200g) con 3 tortillas de trigo, pimientos, cebolla, frijoles negros, queso rallado y guacamole.</item>
+    </string-array>
+
+    <string-array name="cenas">
+        <item>Salmón al horno con verduras asadas, o Sopa de lentejas.</item>
+        <item>Opción 1: Filete de merluza al horno (150g) con verduras al vapor (brócoli y judías verdes) y 1 patata mediana cocida.\n
+            Opción 2: Tazón grande de sopa de verduras con lentejas (aprox. 2 tazas) y una rebanada de pan integral.</item>
+        <item>Opción 1: Lentejas estofadas con verduras (aprox. 2 tazas) y 1 filete de ternera (150g).\n
+            Opción 2: Tacos de carne picada (150g) en 3 tortillas de maíz, con aguacate, frijoles negros y un poco de queso rallado.</item>
+        <item>Opción 1: Filete de salmón (200g) al horno con patatas (1 patata grande) y espárragos. Añade 2 cucharadas de aceite de oliva al servir.\n
+            Opción 2: Pasta integral (100g en seco) con salsa boloñesa de carne picada (200g) y un acompañamiento de ensalada grande con aliño.</item>
+    </string-array>
+
+    <string-array name="m_peso">
+        <item>Kg</item>
+        <item>Lb</item>
+    </string-array>
+
+    <string-array name="m_alto">
+        <item>cm</item>
+        <item>pies</item>
+    </string-array>
+
+    <string-array name="m_actividad">
+        <item>Sedentario (poco o ningún ejercicio)</item>
+        <item>Actividad ligera (ejercicio 1-3 días a la semana)</item>
+        <item>Actividad moderada (ejercicio 3-5 días a la semana)</item>
+        <item>Actividad intensa (ejercicio 6-7 días a la semana)</item>
+        <item>Actividad muy intensa (entrenamientos muy duros diarios)</item>
+    </string-array>
+
+    <string-array name="values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="meses">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
 </resources>

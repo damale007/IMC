@@ -1,11 +1,17 @@
 package com.conadasoft.imccalculadorapesoideal.ui
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.conadasoft.imccalculadorapesoideal.R
 import com.conadasoft.imccalculadorapesoideal.databinding.ItemFavoritosBinding
+import com.conadasoft.imccalculadorapesoideal.ui.InicioFragment.Companion.medidaPeso
+import kotlin.math.abs
 
 class RecyclerAdapter(private val pesos: List<List<String>>) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+    private lateinit var context: Context
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemFavoritosBinding.inflate(
             LayoutInflater.from(parent.context),
@@ -26,20 +32,24 @@ class RecyclerAdapter(private val pesos: List<List<String>>) : RecyclerView.Adap
     class ViewHolder(private val binding: ItemFavoritosBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(fecha: String, peso: String) {
-            binding.idFecha.text = formatoFecha(fecha)
+            val context = binding.idPeso.context
+            binding.idFecha.text = formatoFecha(context, fecha)
             binding.idPeso.text = peso
 
-            val ideal = pesoIdeal()
+            binding.idUnidadPeso.text = context.resources.getStringArray(R.array.m_peso)[medidaPeso]
 
-            var diferencia = peso.toFloat() - ideal
-            if (diferencia == 0f)
-                binding.idPesoResultado.text="Tienes el peso ideal"
+            val ideal = pesoIdeal()
+            var mensaje = ""
+            var diferencia: Int = (peso.toFloat() - ideal).toInt()
+            if (diferencia == 0)
+                mensaje = "(" + context.resources.getString(R.string.pesoIdealT) + ")"
             else if (diferencia > 0)
-                binding.idPesoResultado.text="Tienes sobrepeso de $diferencia kgs."
+                mensaje = "( +" + diferencia + " " + context.resources.getStringArray(R.array.m_peso)[medidaPeso] + ")"
             else {
                 diferencia = -diferencia
-                binding.idPesoResultado.text = "Tienes desnutrición de $diferencia kgs."
+                mensaje = "( -" + diferencia + " " + context.resources.getStringArray(R.array.m_peso)[medidaPeso] + ")"
             }
+            binding.idPesoResultado.text = mensaje
         }
 
         private fun pesoIdeal() : Int{
@@ -50,28 +60,28 @@ class RecyclerAdapter(private val pesos: List<List<String>>) : RecyclerView.Adap
             else {
                 if (InicioFragment.sexo == 1) {  //Hombre
                     ideal = when (InicioFragment.altura) {
-                        in 152..156 -> 51
-                        in 157..161 -> 54
-                        in 162..166 -> 57
-                        in 167..171 -> 63
-                        in 172..176 -> 66
-                        in 177..181 -> 69
-                        in 182..186 -> 74
-                        in 187..191 -> 77
-                        in 192..220 -> 80
+                        in 152f..156f -> 51
+                        in 157f..161f -> 54
+                        in 162f..166f -> 57
+                        in 167f..171f -> 63
+                        in 172f..176f -> 66
+                        in 177f..181f -> 69
+                        in 182f..186f -> 74
+                        in 187f..191f -> 77
+                        in 192f..220f -> 80
                         else -> 0
                     }
                 } else {  // Mujer
                     ideal = when (InicioFragment.altura) {
-                        in 152..156 -> 49
-                        in 157..161 -> 52
-                        in 162..166 -> 55
-                        in 167..171 -> 59
-                        in 172..176 -> 63
-                        in 177..181 -> 67
-                        in 182..186 -> 71
-                        in 187..191 -> 75
-                        in 192..220 -> 78
+                        in 152f..156f -> 49
+                        in 157f..161f -> 52
+                        in 162f..166f -> 55
+                        in 167f..171f -> 59
+                        in 172f..176f -> 63
+                        in 177f..181f -> 67
+                        in 182f..186f -> 71
+                        in 187f..191f -> 75
+                        in 192f..220f -> 78
                         else -> 0
                     }
                 }
@@ -79,11 +89,10 @@ class RecyclerAdapter(private val pesos: List<List<String>>) : RecyclerView.Adap
             return ideal
         }
 
-        private fun formatoFecha(fecha: String): String {
+        private fun formatoFecha(context: Context,fecha: String): String {
             val partes = fecha.split("-")
-            val meses = arrayOf("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")
 
-            return "${partes[2]} ${meses[partes[1].toInt() - 1]} ${partes[0]}"
+            return partes[2] + " " + context.resources.getStringArray(R.array.meses)[partes[1].toInt() -1] + " " + partes[0]
         }
     }
 }

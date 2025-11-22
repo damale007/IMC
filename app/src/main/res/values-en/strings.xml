@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">BMI Ideal Weight Calculator</string>
+    <string name="title_inicio">Home</string>
+    <string name="title_diario">Daily</string>
+    <string name="title_apps">Apps</string>
+
+    <!-- Datos personales -->
+    <string name="titulo_dp">Personal information</string>
+    <string name="nacimiento_dp">Birth date</string>
+    <string name="peso_dp">Weight</string>
+    <string name="altura_dp">Altura</string>
+    <string name="grabar_dp">Save</string>
+
+    <!-- Inicio -->
+    <string name="misDatos">Personal information</string>
+    <string name="TMB">BMR</string>
+    <string name="calorias">Cal</string>
+    <string name="TMB_titulo">BMR or Basal Metabolic Rate</string>
+    <string name="TMB_texto">This is the number of calories your body needs to function at rest (breathing, digesting, maintaining temperature, etc.)</string>
+    <string name="GEDT">TDEE</string>
+    <string name="GEDT_error">Define activity</string>
+    <string name="GEDT_titulo">TDEE or Total Daily Energy Expenditure</string>
+    <string name="GEDT_texto">Estimate the total number of calories you burn per day. This is extremely useful for people who want to maintain, lose, or gain weight.</string>
+
+    <!-- Diario -->
+    <string name="tituloDiario">Weight History</string>
+
+    <!-- Otras Apps -->
+    <string name="titulo_otras_apps">Other apps by the same author</string>
+    <string name="privacidad">All data is stored locally on the device. None is uploaded to the cloud or shared with third parties.</string>
+    <string name="nombre_dp">Name</string>
+    <string name="sexo_dp">Sex</string>
+    <string name="years">years old</string>
+    <string name="masculino_dp">Male</string>
+    <string name="femenino_dp">Female</string>
+    <string name="ok">Acept</string>
+    <string name="alto">tall</string>
+    <string name="noAlto">No tall</string>
+    <string name="pesoIdeal">Ideal</string>
+    <string name="pesoIdealT">Ideal.</string>
+    <string name="sobrepeso">Overweight.</string>
+    <string name="bajopeso">Underweight.</string>
+    <string name="atencion">Atention</string>
+    <string name="errorPeso">You must enter a valid weight</string>
+    <string name="errorNombre">You must enter a name</string>
+    <string name="errorAltura">You must enter a valid height</string>
+    <string name="errorDatos">You must enter all valid data</string>
+
+    <string name="imcT">BMI (Body Mass Index)</string>
+    <string name="imcInf">Low BMI.</string>
+    <string name="imcNormal">Normal BMI</string>
+    <string name="imcAlto">Hight BMI</string>
+    <string name="imcObesidad">Obesity</string>
+    <string name="imcError">BMI error</string>
+
+    <string name="pesoActual">Actual weight</string>
+    <string name="historial_de_pesos">Weight history</string>
+    <string name="editar">Edit</string>
+    <string name="version">Version 2.0.1</string>
+
+    <string name="tiempoPesoIdeal1">According to your input, it will take you </string>
+    <string name="tiempoPesoIdeal2">months to reach your ideal weight.</string>
+    <string name="botonMenu">Menu guide</string>
+    <string name="descripcionMenu">This menu is an approximation of the calories you normally burn. You shouldn\'t take it literally; it\'s an estimation. To create a definitive meal plan, please consult a nutritionist.</string>
+    <string name="desayuno">Breakfast</string>
+    <string name="almuerzo">Lunch</string>
+    <string name="cena">Dinner</string>
+    <string name="snack">Snack</string>
+    <string name="menu">Menu:</string>
+    <string name="mediaconsumo"> cal. You consume an average of</string>
+    <string name="caloriasDia"> cal a day. </string>
+
+    <string-array name="meriendas">
+        <item>Baked salmon with roasted vegetables, or lentil soup.</item>
+        <item>Snack 1 (mid-morning): 1 plain unsweetened yogurt with 1 tablespoon of chia seeds.\n
+            Snack 2 (mid-afternoon): 1 small handful of nuts (walnuts or almonds) and 1 apple.</item>
+        <item>Snack 1 (mid-morning): Protein shake made with 1.5 cups of milk, 1 banana, and 1 scoop of protein powder.\n
+            Snack 2 (mid-afternoon): 1 cup of full-fat Greek yogurt with berries and 2 tablespoons of chia or flax seeds.\n
+            Snack 3 (optional or post-workout): 1 protein bar and 1 piece of fruit.</item>
+        <item>Snack 1 (mid-morning): 1 full-fat Greek yogurt with a handful of nuts (walnuts or almonds). (approx. 280 kcal)
+            Snack 2 (mid-afternoon): 1 apple and a handful of nuts or a protein bar. (approx. 300 kcal)</item>
+    </string-array>
+
+
+    <string-array name="desayunos">
+        <item>Oatmeal with fruit and nuts, or whole grain toast with avocado and egg.</item>
+        <item>Option 1: Bowl of oatmeal with ½ cup of dry oats, 1 cup of milk or plant-based drink, and ½ cup of berries.\n
+            Option 2: 2 scrambled eggs with one slice of whole grain bread and one piece of fruit.</item>
+        <item>Option 1: Smoothie with 1 cup of whole milk, 1 banana, ½ cup of oats, and 1 tablespoon of peanut butter.\n
+            Option 2: 3 scrambled eggs with 2 slices of whole grain bread, ½ avocado, and 1 glass of fresh orange juice.
+        </item>
+        <item>Option 1: Large bowl of oatmeal (1 cup of dry oats) cooked with 1.5 cups of milk, 1 tablespoon of honey, 1 sliced banana, and a generous handful of nuts (almonds or walnuts).\n
+            Option 2: 4 scrambled eggs, 2 chicken or turkey sausages, 2 slices of whole grain toast with avocado, and a glass of fresh orange juice.
+        </item>
+    </string-array>
+
+    <string-array name="almuerzos">
+        <item>Large salad with grilled chicken or fish, or chicken wrap with vegetables.</item>
+        <item>Option 1: Large salad with 150g of grilled chicken breast, mixed leafy greens, tomato, cucumber, grated carrot, ½ small avocado, and a light dressing (lemon vinaigrette with olive oil).\n
+            Option 2: Whole wheat wrap with 100g of tuna in water, lettuce, tomato, and a bit of light mayonnaise. Served with 1 cup of chopped fruit.</item>
+        <item>Option 1: 200g of grilled chicken breast, 1 cup of brown rice, 1 cup of roasted vegetables (broccoli, bell peppers), and 1 tablespoon of olive oil.\n
+            Option 2: 150g of grilled salmon, 1 large baked potato, and a large salad with lettuce, tomato, cucumber, and vinaigrette.</item>
+        <item>Option 1: Large portion of grilled chicken breast (250g) with 2 cups of brown rice and a mix of roasted vegetables (broccoli, carrots, bell peppers) with 2 tablespoons of olive oil.\n
+            Option 2: Beef fajitas (200g) with 3 wheat tortillas, bell peppers, onion, black beans, shredded cheese, and guacamole.</item>
+    </string-array>
+
+    <string-array name="cenas">
+        <item>Baked salmon with roasted vegetables, or lentil soup.</item>
+        <item>Option 1: Baked hake fillet (150g) with steamed vegetables (broccoli and green beans) and 1 medium boiled potato.\n
+            Option 2: Large bowl of vegetable and lentil soup (approx. 2 cups) with one slice of whole grain bread.</item>
+        <item>Option 1: Stewed lentils with vegetables (approx. 2 cups) and 1 beef steak (150g).\n
+            Option 2: Ground beef tacos (150g) in 3 corn tortillas, with avocado, black beans, and a bit of shredded cheese.</item>
+        <item>Option 1: Baked salmon fillet (200g) with potatoes (1 large potato) and asparagus. Add 2 tablespoons of olive oil when serving.\n
+            Option 2: Whole wheat pasta (100g dry) with Bolognese sauce made from ground beef (200g), served with a large side salad with dressing.</item>
+    </string-array>
+
+    <string-array name="m_peso">
+        <item>Kg</item>
+        <item>Lb</item>
+    </string-array>
+
+    <string-array name="m_alto">
+        <item>cm</item>
+        <item>ft</item>
+    </string-array>
+
+    <string-array name="m_actividad">
+        <item>Sedentary (little or no exercise)</item>
+        <item>Light activity (exercise 1-3 days a week)</item>
+        <item>Moderate activity (exercise 3-5 days a week)</item>
+        <item>Intense activity (exercise 6-7 days a week)</item>
+        <item>Very intense activity (very hard daily workouts)</item>
+    </string-array>
+
+    <string-array name="meses">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+</resources>

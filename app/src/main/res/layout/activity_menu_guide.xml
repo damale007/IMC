@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MenuGuide">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tituloMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/botonMenu"
+                android:textSize="30sp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                style="@style/Texto" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:text="@string/descripcionMenu" />
+
+            <TextView
+                android:id="@+id/totalCalorias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:textSize="20sp"
+                style="@style/Texto"
+                tools:text="Calorias" />
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-8408332664043957/2865437760" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/desayuno" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/desayuno"
+                        android:textSize="23sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        style="@style/Texto" />
+
+                    <TextView
+                        android:id="@+id/caloriasDesayuno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/botonMenu"
+                        android:textSize="15sp"
+                        android:layout_marginHorizontal="20dp"
+                        style="@style/Texto" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/descDesayuno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Texto de prueba del desayuno"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/almuerzo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/almuerzo"
+                        android:textSize="23sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        style="@style/Texto" />
+
+                    <TextView
+                        android:id="@+id/caloriasAlmuerzo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/botonMenu"
+                        android:textSize="15sp"
+                        android:layout_marginHorizontal="20dp"
+                        style="@style/Texto" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/descAlmuerzo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Texto de prueba del desayuno"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/snack" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/snack"
+                        android:textSize="23sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        style="@style/Texto" />
+
+                    <TextView
+                        android:id="@+id/caloriasSnack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/botonMenu"
+                        android:textSize="15sp"
+                        android:layout_marginHorizontal="20dp"
+                        style="@style/Texto" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/descSnack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Texto de prueba del desayuno"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cena" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cena"
+                        android:textSize="23sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        style="@style/Texto" />
+
+                    <TextView
+                        android:id="@+id/caloriasCena"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/botonMenu"
+                        android:textSize="15sp"
+                        android:layout_marginHorizontal="20dp"
+                        style="@style/Texto" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/descCena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Texto de prueba del desayuno"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

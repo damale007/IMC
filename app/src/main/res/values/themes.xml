@@ -15,6 +15,18 @@
     </style>
 
     <style name="fondo" parent="Theme.IMCCalculadoraPesoIdeal">
-        <item name="android:background">@color/grisClaro</item>
+        <item name="android:background">#FFF</item>
+    </style>
+
+    <style name="Texto">
+        <item name="android:textColor">#222</item>
+    </style>
+
+    <style name="FondoRosa">
+        <item name="android:background">#FFB5B5</item>
+    </style>
+
+    <style name="FondoVerde">
+        <item name="android:background">#C5E1A5</item>
     </style>
 </resources>

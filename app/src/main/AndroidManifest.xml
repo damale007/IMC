@@ -14,11 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IMCCalculadoraPesoIdeal"
         tools:targetApi="31">
-
-        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MenuGuide"
+            android:exported="false" /> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8408332664043957~3629564951"/>
+            android:value="ca-app-pub-8408332664043957~3629564951" />
 
         <activity
             android:name=".ui.DatosPersonales"

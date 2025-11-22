@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="Unidades">
+        <EditTextPreference
+            app:key="peso"
+            app:title="Peso"
+            app:summary="Unidad de peso"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="altura"
+            app:title="Altura"
+            app:summary="Unidad de altura"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Datos personales">
+
+        <EditTextPreference
+            app:key="nombre_usuario"
+            app:title="Nombre de usuario"
+            app:summary="Introduce tu nombre para personalizar la app"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="sexo_usuario"
+            app:title="Sexo"
+            app:summary="Introduce tu sexo"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="nacimiento_usuario"
+            app:title="Fecha de nacimiento"
+            app:summary="Introduce tu fecha de nacimiento"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="peso_usuario"
+            app:title="Peso"
+            app:summary="Introduce tu peso para personalizar la app"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="altura_usuario"
+            app:title="Altura"
+            app:summary="Introduce tu altura para personalizar la app"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="actividad-usuario"
+            app:title="Actividad"
+            app:summary="%s"
+            app:defaultValue="sistema"
+            app:entries="@array/m_actividad"
+            app:entryValues="@array/values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Interfaz">
+
+        <SwitchPreferenceCompat
+            app:key="notificaciones"
+            app:title="Habilitar notificaciones"
+            app:summaryOn="Las notificaciones están activadas"
+            app:summaryOff="Las notificaciones están desactivadas"
+            app:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
